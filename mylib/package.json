@@ -1,0 +1,27 @@
+{
+  "name": "mylib",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name mylib --mode production src/main.ts"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "sideEffects": false,
+  "main": "dist/mylib.umd.min.js",
+  "browser": "dist/mylib.common.js",
+  "peerDependencies": {
+    "vue": "^2.6.6"
+  },
+  "devDependencies": {
+    "vue": "^2.6.6",
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-typescript": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.6.6"
+  }
+}
